@@ -2,7 +2,7 @@
 Graph-of-Tweets: A Graph Merging Approach to Sub-event Identification (WI2020 submitted)  
 
 graph_config.py - token graph config  
-tweet_config.py - tweet graph congif  
+tweet_config.py - tweet graph config  
 
 demo_token_nodes.ipynb - a demo to retrieve merged token results  
 demo_tweet_nodes.ipynb - a demo to retrieve tweet token results  
