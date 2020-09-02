@@ -627,40 +627,6 @@ class TweetGraph(object):
 
 		print('MI initialization completed. Use GetMI() to compute MI between tweet idx pairs')
 
-	# ====== different version of MI: computing pointwise MI between the tokens ======
-	def MakeTokenKey(self, token1, token2):
-		if token1 < token2:
-			key = token1 + ',' + token2
-		else:
-			key = token2 + ',' + token1
-		return key 
-
-	def ComputeAndUpdatePMI(self, token1, token2, normalize=True):
-		"""
-
-		# NOT COMPLETED
-		# compute the pointwise mutual info given two tokens 
-		# pmi = - p(x, y) * log(p(x, y) / p(x)p(y))
-		# compute all PMIs between all tokens and save them to the graph 
-
-		tweet_indices = self.GetAllTweetIdx()
-		tweet_idx_to_intersection_sum = dict(zip(tweet_indices, [0 for i in range(len(tweet_indices))])) # {idx: sum of intersection size, }
-		tweet_idx_pair_to_intersection = dict() # {idx_pair: intersection_size, }
-
-		p_freq1 = freq1 / num_tweet 
-		p_freq2 = freq2 / num_tweet 
-		p_cooc = cooc_freq / num_tweet 
-
-		PMI = (-1) * p_cooc * np.log(p_cooc / (p_freq1 * p_freq2))
-
-		if normalize:
-			# normalize the PMI with max(-log(x), -log(y))
-			denominator = (-1) * np.min([np.log(p_freq1), np.log(p_freq2)])
-			PMI = PMI / denominator
-		return PMI 
-		
-		"""
-		pass 
 
 	def LoadTokensFromJson(self, input_filename):
 		json_graph = None
