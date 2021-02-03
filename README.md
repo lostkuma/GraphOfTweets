@@ -1,6 +1,5 @@
 # GraphOfTweets
-Graph-of-Tweets: A Graph Merging Approach to Sub-event Identification (WI20/DASM accepted)  
-[Link to paper](https://arxiv.org/abs/2101.03208)
+Paper [Graph-of-Tweets: A Graph Merging Approach to Sub-event Identification] (https://arxiv.org/abs/2101.03208)
 
 graph_config.py - token graph config  
 tweet_config.py - tweet graph config  
